@@ -19,7 +19,9 @@ soup = BeautifulSoup(page, "html.parser")
 # print(soup.find_all("p", attrs={"class": "outer-text"}))
 
 #태그의 내부 문자열만 가져오기: .text속성
-for tag in soup.find_all("p"):
-    title = tag.text.strip()
-    title = title.replace("\n", "")
-    print(title)
+# for tag in soup.find_all("p"):
+#     title = tag.text.strip()
+#     title = title.replace("\n", "")
+#     print(title)
+print(soup.find(id = "first"))
+
